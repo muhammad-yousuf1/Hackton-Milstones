@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Static-Resume-Builder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+
+
+
+
+
+<body>
+
+
+    <div class="container">
+        <h1>Shareable Resume BUilder</h1>
+        <form id="reformat">
+
+
+            <div class="Resume">
+                <label for="name">Username:</label>
+                <input type="text" id="name"  placeholder="Enter Your Username" required>
+            </div>
+
+            <div class="Resume">
+                <label for="name">Name:</label>
+                <input type="text" id="name"  placeholder="Enter Your name" required>
+            </div>
+
+
+
+            <div class="Resume">
+                <label for="email">Email:</label>
+                <input type="email" id="email" placeholder="Enter Your Email Adress" required>
+            </div>
+
+
+
+            <div class="Resume">
+                <label for="phone">Phone:</label>
+                <input type="number" id="phone"placeholder="Enter Your Phone Number" required >
+            </div>
+
+
+
+            <div class="Resume">
+                <label for="education">Education:</label>
+                <input type="text" id="education" placeholder="Enter Your education" required>
+            </div>
+
+
+
+            <div class="Resume">
+
+                <label for="experience">Experience :</label>
+                <input type="text" id="experience" placeholder="Enter Your Experience"  required> </textarea>
+            </div>
+            <button type="submit">Generate Resume</button>
+        </form>
+
+
+
+<br>
+        
+            <h2> Resume </h2>
+            <div id="resumeDetails"></div>
+        </div>
+    </div>
+
+  
+
+  
+
+
+
+
+    <div id="Resume-Display" contenteditable="true">
+    </div>
+
+
+    
+    <div id="Shareable-link-container" style="display: none";>
+    <h2>Shareable link</h2>
+    <p>Here is your unique link to view or edit your resume: </p>
+    <a href="#" id="Shareable-link" target="_blank"></a>
+
+    <BR>
+        <button id="Download-pdf">
+            <b>Download PDF form</b>
+        </button>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
